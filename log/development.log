@@ -684,3 +684,99 @@ Started GET "/" for 127.0.0.1 at 2014-11-01 22:32:03 +0900
 Processing by TopController#index as HTML
   Rendered top/index.html.erb within layouts/review_site (0.0ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-25 20:42:34 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/taniguchieriko/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 46ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-25 20:49:32 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/taniguchieriko/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 28ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (135.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (103.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateProducts (20151025115329)
+  [1m[35m (72.4ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (22.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151025115329')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (14.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateProducts (20151025115329)
+  [1m[36m (47.8ms)[0m  [1mDROP TABLE `products`[0m
+  [1m[35mSQL (41.1ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20151025115329'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateProducts (20151025115329)
+  [1m[35m (79.9ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `image_url` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151025115329')
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:41', 'http://image.eiga.k-img.com/images/movie/82337/poster2/200.jpg?1440753935', '恐怖ノ白魔人', '2015-10-25 13:13:41')
+  [1m[36m (12.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:42', 'http://image.eiga.k-img.com/images/movie/81140/poster2/200.jpg?1440753901', 'ミッドナイト・アフター', '2015-10-25 13:13:42')[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:42', 'http://image.eiga.k-img.com/images/movie/81823/200x133.jpg?1444704207', 'ギャラクシー街道', '2015-10-25 13:13:42')
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:42', 'http://image.eiga.k-img.com/images/movie/81760/poster2/200.jpg?1441961820', 'トランスポーター　イグニション', '2015-10-25 13:13:42')[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:42', 'http://image.eiga.k-img.com/images/movie/82210/poster2/200.jpg?1442544009', 'ボクは坊さん。', '2015-10-25 13:13:42')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:43', 'http://image.eiga.k-img.com/images/movie/82004/poster2/200.jpg?1432611183', 'TRASH トラッシュ', '2015-10-25 13:13:43')[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:44', 'http://image.eiga.k-img.com/images/movie/81620/poster2/200.jpg?1435284937', 'アクトレス　女たちの舞台', '2015-10-25 13:13:44')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:44', 'http://image.eiga.k-img.com/images/movie/80128/poster2/200.jpg?1441165292', 'EARTH TO ECHO アース・トゥ・エコー', '2015-10-25 13:13:44')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:44', 'http://image.eiga.k-img.com/images/movie/41965/poster2/200.jpg?1441850646', '悪魔のいけにえ', '2015-10-25 13:13:44')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:45', 'http://image.eiga.k-img.com/images/movie/82861/poster2/200.jpg?1440990485', '夏ノ日、君ノ声', '2015-10-25 13:13:45')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:45', 'http://image.eiga.k-img.com/images/movie/82361/poster2/200.jpg?1439778105', 'とびだすプリパラ　み～んなでめざせ！アイドル☆グランプリ', '2015-10-25 13:13:45')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:46', 'http://image.eiga.k-img.com/images/movie/83098/poster2/200.jpg?1445339297', 'ERIC CLAPTON エリック・クラプトン Live at the Royal Albert Hall Slowhand at 70', '2015-10-25 13:13:46')[0m
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:47', 'http://image.eiga.k-img.com/images/movie/82976/poster2/200.jpg?1442543680', 'Only 4 you', '2015-10-25 13:13:47')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:47', 'http://image.eiga.k-img.com/images/movie/81877/poster2/200.jpg?1441360342', 'かぐらめ', '2015-10-25 13:13:47')[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:48', 'http://image.eiga.k-img.com/images/movie/81137/poster2/200.jpg?1437963001', 'シーヴァス　王子さまになりたかった少年と負け犬だった闘犬の物語', '2015-10-25 13:13:48')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:48', 'http://image.eiga.k-img.com/images/movie/82335/poster2/200.jpg?1445339011', 'ゾンビ・ガール', '2015-10-25 13:13:48')[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:48', 'http://image.eiga.k-img.com/images/movie/83096/poster2/200.jpg?1443413743', '種まきうさぎ　フクシマに向き合う青春', '2015-10-25 13:13:48')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:49', 'http://image.eiga.k-img.com/images/movie/81650/poster2/200.jpg?1438567561', 'ディアーディアー', '2015-10-25 13:13:49')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:49', 'http://image.eiga.k-img.com/images/movie/82153/200x133.jpg?1444042334', 'ディズニーネイチャー　サルの王国とその掟', '2015-10-25 13:13:49')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`created_at`, `image_url`, `title`, `updated_at`) VALUES ('2015-10-25 13:13:50', 'http://image.eiga.k-img.com/images/movie/82770/poster2/200.jpg?1442545305', '日本零年　フクシマからの風　第二章', '2015-10-25 13:13:50')[0m
+  [1m[35m (1.1ms)[0m  COMMIT
